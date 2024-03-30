@@ -90,4 +90,4 @@ if [ "$DISABLE_VIMRC" -eq "1" ]; then
 fi
 
 # Finally, we execute the stored array of vim commands:
-vim - -nes "$@" -c ':q!' | tail -n +2
+nvim - -nEs "$@" -c ':q!'
